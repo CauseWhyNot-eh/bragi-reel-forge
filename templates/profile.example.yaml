@@ -1,0 +1,50 @@
+# Public profile template for the Short-Form Video Automation Factory
+# Copy this file to profile.yaml and fill it with your own project details.
+# Do not put API keys or access tokens in this file.
+
+brand:
+  name: "YOUR_BRAND"
+  website: "https://example.com"
+  tone: [clear, specific, human]
+  colors: []
+  fonts: []
+  logo_path: "assets/logo.svg"
+
+audience:
+  primary: "Describe the main viewer."
+  secondary: []
+  pains: []
+  desires: []
+  awareness_stage: "problem_aware"
+
+product:
+  description: "Describe the product or subject in one sentence."
+  approved_claims: []
+  prohibited_claims: []
+  proof_assets: []
+  product_demo_assets: []
+
+content:
+  default_platform: "instagram_reels"
+  default_duration_seconds: 30
+  default_language: "en"
+  default_cta: "YOUR_CALL_TO_ACTION"
+  allowed_visual_modes: [motion_graphics, product_demo, avatar, footage]
+  forbidden_visual_modes: []
+  synthetic_media_disclosure: ""
+
+providers:
+  llm: "structured-output-provider"
+  tts: "tts-provider"
+  avatar: "optional-avatar-provider"
+  renderer: "remotion"
+  publisher: "manual-review"
+  analytics: "manual-snapshots"
+
+secrets:
+  # Environment-variable names only. Never store secret values here.
+  llm_key_env: "LLM_API_KEY"
+  tts_key_env: "TTS_API_KEY"
+  avatar_key_env: "AVATAR_API_KEY"
+  publisher_key_env: "PUBLISHER_API_KEY"
+  analytics_key_env: "ANALYTICS_API_KEY"

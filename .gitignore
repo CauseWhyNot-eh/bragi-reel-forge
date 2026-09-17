@@ -1,0 +1,31 @@
+# User-specific configuration
+profile.yaml
+.env
+.env.*
+!.env.example
+
+# Generated jobs and review artifacts
+jobs/
+review/
+outputs/
+*.mp4
+*.mov
+*.webm
+*.wav
+*.mp3
+*.png
+*.jpg
+
+# Provider caches and local state
+.cache/
+.cache-*
+state/
+logs/
+
+# Local development
+node_modules/
+dist/
+build/
+coverage/
+__pycache__/
+*.pyc
